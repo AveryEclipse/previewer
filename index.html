@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previewer</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+</head>
+<body>
+    <h1>Previewer</h1>
+    <p>a simple little utility where you can test your own HTML and/or CSS code! made for convenience. <small>(JavaScript will not execute in the rendered code!)</small></p>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+      <div class="textarea">
+        <span>html</span>
+        <textarea id="html"></textarea>
+      </div>
+      <div class="textarea">
+        <span>css</span>
+        <textarea id="css"></textarea>
+      </div>
+    </div>
+
+    <span>output</span>
+    <noscript><b>[!] Please enable JavaScript to show output! [!]</b></noscript>
+    <iframe id="output" sandbox=""></iframe>
+
+    <div style="text-align: center;">
+       <p><small>Made with &lt;3 by <b>Avery</b></small></p>
+       <a href="http://avery.is-a.dev">
+         <img style="image-rendering:pixelated; text-align:center;" src="http://avery.is-a.dev/img/8831/avery2.png">
+       </a>
+    </div>
+
+    <script src="assets/preview.js"></script>
+</body>
+</html>
